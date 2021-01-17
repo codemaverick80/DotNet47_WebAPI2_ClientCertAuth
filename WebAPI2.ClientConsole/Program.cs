@@ -66,7 +66,7 @@ namespace WebAPI2.ClientConsole
             {
                 userCaStore.Open(OpenFlags.ReadOnly);
                 X509Certificate2Collection certificatesInStore = userCaStore.Certificates;
-                X509Certificate2Collection findResult = certificatesInStore.Find(X509FindType.FindBySubjectName, "geetsangeet.com", true);
+                X509Certificate2Collection findResult = certificatesInStore.Find(X509FindType.FindBySubjectName, "OU=TESTAPP", true);
                 X509Certificate2 clientCertificate = null;
                 if (findResult.Count == 1)
                 {

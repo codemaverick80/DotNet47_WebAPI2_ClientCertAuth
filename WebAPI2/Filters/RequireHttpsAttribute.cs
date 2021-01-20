@@ -24,6 +24,7 @@ namespace WebAPI2.Filters
                 {
                     ReasonPhrase = "HTTPS Required"
                 };
+                return;
             }
 
             if (!IsValidClientCertificate(cert))
@@ -33,6 +34,7 @@ namespace WebAPI2.Filters
                     //ReasonPhrase = cert.Subject + " - " + cert.SubjectName.Name + " - " + cert.NotAfter.ToString()
                     ReasonPhrase = "Invalid Client Certificate"
                 };
+                return;
             }
 
         }

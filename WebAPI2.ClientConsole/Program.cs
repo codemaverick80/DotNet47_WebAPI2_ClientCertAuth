@@ -232,7 +232,8 @@ namespace WebAPI2.ClientConsole
         {
             try
             {
-                X509Store userCaStore = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+               // X509Store userCaStore = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+                X509Store userCaStore = new X509Store(StoreLocation.LocalMachine);
                 userCaStore.Open(OpenFlags.ReadOnly);
                 X509Certificate2Collection certificatesInStore = userCaStore.Certificates;
                 X509Certificate2 clientCertificate = null;

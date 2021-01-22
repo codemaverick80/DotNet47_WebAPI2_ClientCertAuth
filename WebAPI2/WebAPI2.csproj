@@ -161,7 +161,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductPostRequest.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Filters\ModelValidationAttribute.cs" />
     <Compile Include="Filters\RequireHttpsAttribute.cs" />
     <Compile Include="Global.asax.cs">
